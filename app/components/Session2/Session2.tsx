@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { sermons } from "@/app/watch/data"; // Adjust the import path as needed
 
 const Section2: React.FC = () => {
 	const [isMounted, setIsMounted] = useState(false);
@@ -8,35 +9,38 @@ const Section2: React.FC = () => {
 		setIsMounted(true);
 	}, []);
 
+	// Get first 3 sermons
+	const displayedSermons = sermons.slice(0, 3);
+
 	// Video content component
-	const VideoContent = () => (
+	const VideoContent = ({ sermon }: { sermon: (typeof sermons)[0] }) => (
 		<div className='space-y-8 w-full'>
 			<div className='aspect-w-16 aspect-h-9'>
 				{isMounted && (
 					<iframe
 						className='w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px]'
-						src='https://www.youtube.com/embed/VF4WZJCg69o?controls=1&modestbranding=1&rel=0&showinfo=0'
+						src={`${sermon.videoUrl}?controls=1&modestbranding=1&rel=0&showinfo=0`}
 						frameBorder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						allowFullScreen
-						title='Made to Multiply'
+						title={sermon.title}
 					/>
 				)}
 			</div>
 			<div className='text-black'>
-				<h3 className='text-2xl md:text-3xl font-bold mb-2'>
-					The Multiply Initiative
-				</h3>
+				<h3 className='text-2xl md:text-3xl font-bold mb-2'>{sermon.title}</h3>
 				<p className='text-orange-500 mb-2 font-medium'>
-					Disciples. Leaders. Groups. Churches.
+					{sermon.series} • {sermon.speaker}
 				</p>
-				<p className='mb-4 text-gray-700'>
-					The Multiply Initiative is a 16-month journey to multiply all God has
-					given us for his glory and the good of others.
-				</p>
-				<button className='bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition duration-300'>
-					Learn More
-				</button>
+				<p className='mb-4 text-gray-700'>{sermon.description}</p>
+				<div className='flex flex-wrap gap-2'>
+					<button className='bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition duration-300'>
+						Watch Full Sermon
+					</button>
+					<button className='border border-orange-500 text-orange-500 px-6 py-2 rounded-md hover:bg-orange-50 transition duration-300'>
+						Download Audio
+					</button>
+				</div>
 			</div>
 		</div>
 	);
@@ -86,9 +90,9 @@ const Section2: React.FC = () => {
 
 					{/* Right Side - Scrollable Content */}
 					<div className='lg:col-span-7 space-y-8 md:space-y-10 lg:space-y-12'>
-						<VideoContent />
-						<VideoContent />
-						<VideoContent />
+						{displayedSermons.map((sermon) => (
+							<VideoContent key={sermon.id} sermon={sermon} />
+						))}
 					</div>
 				</div>
 			</div>
