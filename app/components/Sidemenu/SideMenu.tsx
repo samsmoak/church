@@ -41,10 +41,10 @@ const SideMenu = ({ isOpen, onClose }: SideMenuProps) => {
 
 				<div className='w-24 h-24 rounded-full overflow-hidden border-2 border-orange-500'>
 					<Image
-						src='/images/prot.jpg'
+						src='/assets/churchlogo.jpg'
 						alt='Profile'
-						width={96}
-						height={96}
+						width={1280}
+						height={720}
 						className='object-cover w-full h-full'
 						priority
 					/>
