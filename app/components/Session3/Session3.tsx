@@ -10,19 +10,19 @@ const Section3: React.FC = () => {
 	// Image data array for cleaner mapping
 	const churchImages = [
 		{
-			src: "/assets/church1.jpeg",
+			src: "/assets/church14.jpeg",
 			alt: "Worship service at Two Cities Church",
 			width: 1280,
 			height: 720,
 		},
 		{
-			src: "/assets/church2.jpeg",
+			src: "/assets/church10.jpeg",
 			alt: "Pastor teaching at Two Cities Church",
 			width: 1280,
 			height: 720,
 		},
 		{
-			src: "/assets/church4.jpeg",
+			src: "/assets/church15.jpeg",
 			alt: "Community members at Two Cities Church",
 			width: 1280,
 			height: 720,
@@ -45,7 +45,6 @@ const Section3: React.FC = () => {
 								width={image.width}
 								height={image.height}
 								className='object-cover w-full h-full'
-								priority={index === 0} // Only prioritize first image
 							/>
 						</div>
 					))}

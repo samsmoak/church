@@ -9,25 +9,22 @@ interface Person {
 
 const persons: Person[] = [
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703_1280.jpg",
+		image: "/assets/church8.jpeg",
 		title: "What is a  gathering  like?",
 		description:
 			"Two Cities Church exists to see every man, woman, and child in Winston-Salem have repeated opportunities to see, hear, and respond to the gospel. Every week, you will find passionate and authentic worship, gospel-centered preaching, and a vibrant kids ministry. Whether you’ve been around church all of your life or this is your first time stepping foot in a church, we want to make your experience welcoming.",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2014/04/12/14/59/portrait-322470_1280.jpg",
-		title: "What is a  gathering  like?",
+		image: "/assets/church1.jpeg",
+		title: "What type of  music  do you sing?",
 		description:
-			"Two Cities Church exists to see every man, woman, and child in Winston-Salem have repeated opportunities to see, hear, and respond to the gospel. Every week, you will find passionate and authentic worship, gospel-centered preaching, and a vibrant kids ministry. Whether you’ve been around church all of your life or this is your first time stepping foot in a church, we want to make your experience welcoming.",
+			"At Two Cities, every gathering is filled with music rooted in God’s Word and centered on His character. Our desire is that everyone who attends our worship services leaves with a deep sense of awe and wonder at all Jesus has done for us. We are committed to singing psalms, hymns, and spiritual songs (Colossians 3:16) through heartfelt, modern worship music that is both meaningful and Christ-focused.",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2014/04/12/14/59/portrait-322470_1280.jpg",
-		title: "What is a  gathering  like?",
+		image: "/assets/church4.jpeg",
+		title: "How is the  teaching? ",
 		description:
-			"Two Cities Church exists to see every man, woman, and child in Winston-Salem have repeated opportunities to see, hear, and respond to the gospel. Every week, you will find passionate and authentic worship, gospel-centered preaching, and a vibrant kids ministry. Whether you’ve been around church all of your life or this is your first time stepping foot in a church, we want to make your experience welcoming.",
+			"At Two Cities, our preaching is expository in nature and gospel-centered in content. We aim to clearly unpack what each passage of Scripture says while showing how it fits into the overarching story of the Bible. Every sermon points to the central truth that we are called to love God in response to His great love for us—a love most clearly displayed in the sacrificial death of Jesus. The Gospel is always the focus, and Jesus is always the hero of every message.",
 	},
 ];
 
@@ -44,8 +41,9 @@ const Sectionintro3: React.FC = () => {
 							<Image
 								src={item.image}
 								alt={item.title}
-								fill
-								className='object-cover'
+								width='1280'
+								height='720'
+								className='object-cover w-full h-full'
 							/>
 						</div>
 						<div className='w-full md:w-1/2'>

@@ -167,7 +167,10 @@ const Footer: React.FC = () => {
 				</div>
 			</div>
 			<div className='bg-black text-white text-center py-2 text-sm'>
-				Website created by samuel
+				Website created by{" "}
+				<span className='text-xl font-semibold text-red-400 italic'>
+					samuel
+				</span>
 			</div>
 		</footer>
 	);

@@ -1,37 +1,37 @@
 export const Experts = [
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703_1280.jpg",
-		comment: "Productive Tech Leadership at Tesla",
+		image: "/assets/church1.jpeg",
+		name: "Melissa",
+		comment: "Life-changing worship experience!",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2014/04/12/14/59/portrait-322470_1280.jpg",
-		comment: "Founder, Entrepreneur, Investor, Mentor at Gringo, Eskolare",
+		image: "/assets/church12.jpeg",
+		name: "Juanita",
+		comment: "The prayer nights renewed my faith",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2019/08/01/05/59/girl-4376755_1280.jpg",
-		comment: "Productive Tech Leadership at Coach Denis",
+		image: "/assets/church16.jpeg",
+		name: "Pearl",
+		comment: "Youth ministry transformed my daughter",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2024/03/21/15/38/man-8647994_1280.png",
-		comment: "Senior Software Engineer - Frontend at Miro",
+		image: "/assets/church11.jpeg",
+		name: "Samuel",
+		comment: "Bible study deepened my understanding",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2024/03/21/15/38/man-8647994_1280.png",
-		comment: "Senior Software Engineer",
+		image: "/assets/church3.jpeg",
+		name: "Emmanuel",
+		comment: "Powerful messages every Sunday",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2024/03/21/15/38/man-8647994_1280.png",
-		comment: "Senior Software Engineer",
+		image: "/assets/church1.jpeg",
+		name: "Jon",
+		comment: "Found my spiritual family here",
 	},
 	{
-		image:
-			"https://cdn.pixabay.com/photo/2024/03/21/15/38/man-8647994_1280.png",
-		comment: "Chief Marketing Officer",
+		image: "/assets/church1.jpeg",
+		name: "Elijah",
+		comment: "Community outreach blessed many",
 	},
 ];

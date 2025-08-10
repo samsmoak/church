@@ -19,7 +19,7 @@ const Section4: React.FC = () => {
 			description:
 				"The Weekender is where you learn who we are and how you can get connected through Community Groups and serving at Two Cities.",
 			cta: "Learn More About The Weekender",
-			image: "/assets/church6.jpeg",
+			image: "/assets/church11.jpeg",
 			alt: "Group of people at Weekender event",
 		},
 		{

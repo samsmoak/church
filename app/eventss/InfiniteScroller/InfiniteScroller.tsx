@@ -39,23 +39,19 @@ const InfiniteScroller: React.FC = () => {
 								className=' flex flex-row py-4 px-4 space-x-2 rounded-md   border-2 border-gray-200 '
 								key={index}
 							>
-								<div className='flex-shrink-0 w-20 h-20 rounded-md overflow-hidden '>
+								<div className='flex-shrink-0 w-40 h-40 rounded-md overflow-hidden '>
 									<Image
 										src={item.image}
 										width='1280'
 										height='720'
 										alt={`Expert ${index + 1}`}
-										className='w-full h-full object-cover'
+										className='w-full h-full object-fit scale-150'
 									/>
 								</div>
 								<div className='space-y-2'>
-									<div>name of mentor </div>
-									<div className='w-full whitespace-normal  text-gray-500 text-sm font-semibold'>
+									<div className='text-xl font-bold'>{item.name} </div>
+									<div className='w-full text-3xl whitespace-normal  text-gray-500  font-light'>
 										{item.comment}
-									</div>
-									<div>
-										<div>other details </div>
-										<div>other details </div>
 									</div>
 								</div>
 							</li>

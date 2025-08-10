@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { Experts } from "@/app/Expert";
+import { members } from "@/app/leadership/data";
 
 interface Slide {
 	image: string;
@@ -48,7 +49,7 @@ const HomeSlider = () => {
 					modules={[Autoplay, Navigation, Pagination]}
 					className='mySwiper w-full'
 				>
-					{Experts.map((item, id) => (
+					{members.map((item, id) => (
 						<SwiperSlide key={id}>
 							<div className='flex flex-col items-center'>
 								<div className='w-full h-96 rounded-lg overflow-hidden relative'>
@@ -63,10 +64,10 @@ const HomeSlider = () => {
 									/>
 									<div className='absolute bottom-0 left-0 right-0 text-white px-2 py-1 rounded text-sm font-bold'>
 										<h2 className='text-2xl font-semibold my-4 capitalize'>
-											{item.title}
+											{item.name}
 										</h2>
 										<p className='capitalize mb-2 py-1 px-2 border-2 border-white'>
-											{item.extra}
+											{item.domain}
 										</p>
 									</div>
 								</div>
