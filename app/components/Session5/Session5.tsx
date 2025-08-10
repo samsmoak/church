@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +13,7 @@ interface Slide {
 	alt?: string;
 	domain: string;
 	name: string;
-	pirce: number; // Note: Typo in original interface, assuming it's 'price'
+	pirce: number;
 	badge: boolean;
 }
 
@@ -52,24 +51,24 @@ const HomeSlider = () => {
 					{Experts.map((item, id) => (
 						<SwiperSlide key={id}>
 							<div className='flex flex-col items-center'>
-								<div className='w-full h-56 rounded-lg overflow-hidden relative'>
+								<div className='w-full h-96 rounded-lg overflow-hidden relative'>
+									{" "}
+									{/* Increased height from h-56 to h-96 */}
 									<Image
-										width={1280}
-										height={720}
+										width={1920}
+										height={1080}
 										src={item.image}
 										alt={`Expert ${id + 1}`}
 										className='w-full h-full object-cover'
 									/>
-									{item.badge && (
-										<div className='absolute bottom-0 left-0 right-0   text-white px-2 py-1 rounded text-sm font-bold'>
-											<h2 className='text-2xl font-semibold my-4 capitalize'>
-												{item.name}
-											</h2>
-											<p className=' capitalize mb-2 py-1 px-2 border-2 border-white '>
-												{item.domain}
-											</p>
-										</div>
-									)}
+									<div className='absolute bottom-0 left-0 right-0 text-white px-2 py-1 rounded text-sm font-bold'>
+										<h2 className='text-2xl font-semibold my-4 capitalize'>
+											{item.title}
+										</h2>
+										<p className='capitalize mb-2 py-1 px-2 border-2 border-white'>
+											{item.extra}
+										</p>
+									</div>
 								</div>
 							</div>
 						</SwiperSlide>

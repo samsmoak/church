@@ -52,6 +52,15 @@ const SideMenu = ({ isOpen, onClose }: SideMenuProps) => {
 
 				<nav className='w-full flex flex-col space-y-4 text-white'>
 					<Link
+						href='/'
+						className={`py-2 px-4 rounded hover:bg-neutral-700 transition-colors ${
+							pathname === "/" ? "text-orange-500 font-bold" : ""
+						}`}
+						onClick={onClose}
+					>
+						Home
+					</Link>
+					<Link
 						href='/introduction'
 						className={`py-2 px-4 rounded hover:bg-neutral-700 transition-colors ${
 							pathname === "/introduction" ? "text-orange-500 font-bold" : ""

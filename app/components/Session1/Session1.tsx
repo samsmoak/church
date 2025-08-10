@@ -9,7 +9,7 @@ const ConferenceSection: React.FC = () => {
 	}, []);
 
 	return (
-		<section className='bg-black text-white py-8 md:py-12'>
+		<section className='bg-black text-white py-8 md:py-12 m-5 md:m-10'>
 			<div className='container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-8'>
 				{/* Left Side: Video Player */}
 				<div className='w-full lg:w-1/2'>
@@ -28,26 +28,10 @@ const ConferenceSection: React.FC = () => {
 							title='The Heights Conference 2025'
 						></iframe>
 					)}
-					{/* More Videos Carousel */}
-					<div className='mt-4'>
-						<h3 className='text-sm font-semibold mb-2'>More videos</h3>
-						<div className='flex items-center space-x-2 overflow-x-auto'>
-							{/* Placeholder Thumbnails - Replace with actual images or embeds */}
-							<div className='min-w-[120px] h-[80px] bg-gray-700 flex items-center justify-center text-xs'>
-								Thumbnail 1
-							</div>
-							<div className='min-w-[120px] h-[80px] bg-gray-700 flex items-center justify-center text-xs'>
-								Thumbnail 2
-							</div>
-							<div className='min-w-[120px] h-[80px] bg-gray-700 flex items-center justify-center text-xs'>
-								Thumbnail 3
-							</div>
-						</div>
-					</div>
 				</div>
 
 				{/* Right Side: Text and Dates */}
-				<div className='w-full lg:w-1/2 text-center lg:text-left'>
+				<div className='w-full lg:w-1/2 text-center lg:text-left p-20'>
 					<h1 className='text-3xl md:text-4xl font-bold mb-4'>
 						The Heights 2025
 					</h1>

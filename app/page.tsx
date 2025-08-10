@@ -11,9 +11,12 @@ import Section3 from "./components/Session3/Session3";
 
 export default function Home() {
 	return (
-		<div className='w-screen'>
-			<div className='w-full'>
-				<PurposeBanner />
+		<div className='w-screen mt-24 '>
+			<div className='w-full bg-white'>
+				<div className='py-10 md:px-10 flex justify-center items-center'>
+					<PurposeBanner />
+				</div>
+
 				<ConferenceSection />
 				<Section2 />
 				<Section3 />

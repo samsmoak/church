@@ -167,7 +167,7 @@ const Footer: React.FC = () => {
 				</div>
 			</div>
 			<div className='bg-black text-white text-center py-2 text-sm'>
-				Website created by SAMSMOAK
+				Website created by samuel
 			</div>
 		</footer>
 	);

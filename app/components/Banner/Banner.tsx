@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const PurposeBanner: React.FC = () => {
@@ -17,10 +18,10 @@ const PurposeBanner: React.FC = () => {
 	}, []);
 
 	return (
-		<section className='relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden'>
+		<section className='relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden '>
 			{/* YouTube Video Embed - Direct iframe implementation */}
 			{isMounted && (
-				<div className='absolute inset-0 w-full h-full'>
+				<div className='absolute w-full h-full'>
 					<iframe
 						src='https://www.youtube.com/embed/nQWFzMvCfLE?autoplay=1&mute=1&loop=1&playlist=nQWFzMvCfLE&controls=0&modestbranding=1&rel=0&showinfo=0'
 						className='w-full h-full'
@@ -63,7 +64,7 @@ const PurposeBanner: React.FC = () => {
 
 			{/* Rotating Logo */}
 			<div className='absolute bottom-4 right-4 z-20'>
-				<svg
+				{/* <svg
 					className='w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24'
 					viewBox='0 0 100 100'
 					style={{ transform: `rotate(${rotation}deg)` }}
@@ -80,7 +81,18 @@ const PurposeBanner: React.FC = () => {
 						</textPath>
 					</text>
 					<polygon points='45,40 55,40 60,50 50,60 40,50' fill='white' />
-				</svg>
+				</svg> */}
+
+				<div className='w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:h-40 lg:w-40 rounded-full overflow-hidden'>
+					<Image
+						src='/assets/churchlogo.jpg'
+						alt='Community and Purpose Banner'
+						width={1280}
+						height={720}
+						className='object-cover w-full brightness-50'
+						style={{ transform: `rotate(${rotation}deg)` }}
+					/>
+				</div>
 			</div>
 		</section>
 	);
