@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
 					</div>
 					<div>
 						<h3 className='text-lg font-extrabold text-[#C25020] mb-4'>
-							About Two Cities
+							About 522Church
 						</h3>
 						<ul className='space-y-3'>
 							<li>

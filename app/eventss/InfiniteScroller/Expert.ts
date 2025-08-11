@@ -1,37 +1,32 @@
 export const Experts = [
 	{
-		image: "/assets/church1.jpeg",
+		image: "/assets/churchai.png",
 		name: "Melissa",
 		comment: "Life-changing worship experience!",
 	},
 	{
-		image: "/assets/church12.jpeg",
+		image: "/assets/church24.jpeg",
 		name: "Juanita",
 		comment: "The prayer nights renewed my faith",
 	},
 	{
-		image: "/assets/church16.jpeg",
-		name: "Pearl",
-		comment: "Youth ministry transformed my daughter",
+		image: "/assets/church21.jpeg",
+		name: "Pastor Steve",
+		comment: "Youth ministry transformed many lives",
 	},
 	{
-		image: "/assets/church11.jpeg",
+		image: "/assets/church39.jpeg",
 		name: "Samuel",
 		comment: "Bible study deepened my understanding",
 	},
 	{
-		image: "/assets/church3.jpeg",
-		name: "Emmanuel",
+		image: "/assets/church15.jpeg",
+		name: "Ama",
 		comment: "Powerful messages every Sunday",
 	},
 	{
-		image: "/assets/church1.jpeg",
-		name: "Jon",
+		image: "/assets/church27.jpeg",
+		name: "Pearl",
 		comment: "Found my spiritual family here",
-	},
-	{
-		image: "/assets/church1.jpeg",
-		name: "Elijah",
-		comment: "Community outreach blessed many",
 	},
 ];
