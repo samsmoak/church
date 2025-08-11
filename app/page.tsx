@@ -21,7 +21,7 @@ export default function Home() {
 				<Section2 />
 				<Section3 />
 				<Session4 />
-				<div className='px-5'>
+				<div className='px-5   '>
 					<Session5 />
 				</div>
 				<div className='w-full'>

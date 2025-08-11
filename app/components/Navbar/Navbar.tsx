@@ -11,7 +11,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<nav className='bg-black text-white py-4 fixed top-0 w-full z-40'>
+			<nav className='bg-[#333333] text-white py-1 fixed top-0 w-full z-40'>
 				<div className='container mx-auto px-4 flex justify-between items-center'>
 					{/* Logo */}
 					<Link
@@ -25,7 +25,7 @@ const Navbar = () => {
 							<Image
 								src='/assets/churchlogo.jpg' // Path relative to public folder
 								alt='Woman on stage'
-								className='object-cover rounded scale-150'
+								className='object-cover rounded scale-125'
 								width='1280'
 								height='720'
 							/>
@@ -83,6 +83,14 @@ const Navbar = () => {
 							}`}
 						>
 							GIVE
+						</Link>
+						<Link
+							href='/about'
+							className={`hover:text-gray-300 transition-colors ${
+								pathname === "/about" ? "border-b-2 border-orange-500" : ""
+							}`}
+						>
+							ABOUT
 						</Link>
 					</div>
 

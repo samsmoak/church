@@ -2,175 +2,262 @@
 
 import React from "react";
 import Link from "next/link";
+import {
+	Facebook,
+	Instagram,
+	Youtube,
+	MapPin,
+	Mail,
+	Phone,
+} from "lucide-react"; // Using lucide-react for modern icons
 
 const Footer: React.FC = () => {
 	return (
-		<footer className='bg-gray-100 text-gray-700'>
-			<div className='max-w-[1200px] mx-auto px-5 py-10'>
-				<div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-10'>
+		<footer className='bg-[#333333] text-gray-200'>
+			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16'>
+				<div className='grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 mb-12'>
 					<div>
-						<h3 className='text-lg font-bold mb-4'>Connect</h3>
-						<ul className='space-y-2'>
+						<h3 className='text-lg font-extrabold text-[#C25020] mb-4'>
+							Connect With Us
+						</h3>
+						<ul className='space-y-3'>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									What To Expect
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									What to Expect
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Weekender
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									The Weekender
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Events
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Upcoming Events
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
 									Resources
 								</Link>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<h3 className='text-lg font-bold mb-4'>Ministries</h3>
-						<ul className='space-y-2'>
+						<h3 className='text-lg font-extrabold text-[#C25020] mb-4'>
+							Our Ministries
+						</h3>
+						<ul className='space-y-3'>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Kids
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Kids Ministry
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Students
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Student Ministry
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									College
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									College Ministry
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
 									Community Groups
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
 									DNA Groups
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
 									Mission Trips
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Care
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Care & Support
 								</Link>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<h3 className='text-lg font-bold mb-4'>About Us</h3>
-						<ul className='space-y-2'>
+						<h3 className='text-lg font-extrabold text-[#C25020] mb-4'>
+							About Two Cities
+						</h3>
+						<ul className='space-y-3'>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Leadership
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Our Leadership
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
 									Vision & Values
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Beliefs
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Our Beliefs
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Residency
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Residency Program
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Internship
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Internship Opportunities
 								</Link>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<h3 className='text-lg font-bold mb-4'>Interact</h3>
-						<ul className='space-y-2'>
+						<h3 className='text-lg font-extrabold text-[#C25020] mb-4'>
+							Engage Online
+						</h3>
+						<ul className='space-y-3'>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Watch
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Watch Sermons
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
-									Give
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
+									Give Online
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
 									Apple Podcasts
 								</Link>
 							</li>
 							<li>
-								<Link href='#' className='hover:text-orange-500 transition'>
+								<Link
+									href='#'
+									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+								>
 									Spotify
 								</Link>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 text-sm'>
+				<div className='grid grid-cols-1 md:grid-cols-4 gap-8 text-sm'>
 					<div>
-						<h4 className='font-bold mb-2'>Winston-Salem</h4>
-						<p>Sundays 9AM, 11AM, 5PM</p>
-						<p>1001 N. Patterson Ave.</p>
-						<p>Winston-Salem, NC 27101</p>
-						<p className='italic'>"Mailing Address"</p>
+						<h4 className='font-bold text-[#C25020] mb-3 flex items-center gap-2'>
+							<MapPin className='w-5 h-5' />
+							Winston-Salem Location
+						</h4>
+						<p className='text-gray-300'>Sundays at 10:00 AM</p>
+						<p className='text-gray-300'>1001 N. Patterson Ave.</p>
+						<p className='text-gray-300'>Winston-Salem, NC 27101</p>
 					</div>
 					<div>
-						<h4 className='font-bold mb-2'>Lexington</h4>
-						<p>Sundays 9AM - 11AM</p>
-						<p>1405 Winston Rd</p>
-						<p>Lexington, NC 27295</p>
-					</div>
-					<div>
-						<h4 className='font-bold mb-2'>TCC Students Location</h4>
-						<p>864 W. Northwest Blvd.</p>
-						<p>Winston-Salem, NC 27101</p>
-					</div>
-					<div>
-						<h4 className='font-bold mb-2'>Questions?</h4>
-						<p>336-783-4360</p>
-						<p>contact@twocitieschurch.net</p>
+						<h4 className='font-bold text-[#C25020] mb-3 flex items-center gap-2'>
+							<Mail className='w-5 h-5' />
+							Contact Us
+						</h4>
+						<p className='text-gray-300 flex items-center gap-2'>
+							<Phone className='w-4 h-4' />
+							3023971397
+						</p>
+						<p className='text-gray-300 flex items-center gap-2'>
+							<Mail className='w-4 h-4' />
+
+							<p>contact:stephenowusujason@gmail.com</p>
+						</p>
 						<div className='flex space-x-4 mt-4'>
-							<Link href='#' className='text-blue-600 hover:text-blue-800'>
-								<span className='sr-only'>Facebook</span>f
+							<Link
+								href='#'
+								className='text-gray-200 hover:text-[#C25020] transition-colors duration-300'
+								aria-label='Facebook'
+							>
+								<Facebook className='w-6 h-6' />
 							</Link>
-							<Link href='#' className='text-pink-600 hover:text-pink-800'>
-								<span className='sr-only'>Instagram</span>@
+							<Link
+								href='#'
+								className='text-gray-200 hover:text-[#C25020] transition-colors duration-300'
+								aria-label='Instagram'
+							>
+								<Instagram className='w-6 h-6' />
 							</Link>
-							<Link href='#' className='text-red-600 hover:text-red-800'>
-								<span className='sr-only'>YouTube</span>▶
+							<Link
+								href='#'
+								className='text-gray-200 hover:text-[#C25020] transition-colors duration-300'
+								aria-label='YouTube'
+							>
+								<Youtube className='w-6 h-6' />
 							</Link>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className='bg-black text-white text-center py-2 text-sm'>
-				Website created by{" "}
-				<span className='text-xl font-semibold text-red-400 italic'>
-					samuel
-				</span>
+			<div className='bg-[#1F2937] text-gray-300 text-center py-4 text-sm'>
+				Website crafted with care by{" "}
+				<span className='font-semibold text-[#C25020]'>Samuel</span>
 			</div>
 		</footer>
 	);

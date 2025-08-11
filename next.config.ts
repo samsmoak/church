@@ -7,7 +7,12 @@ const __dirname = path.dirname(__filename);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ["cdn.pixabay.com", "i.ytimg.com"],
+		domains: [
+			"cdn.pixabay.com",
+			"i.ytimg.com",
+			"images.unsplash.com",
+			"source.unsplash.com",
+		],
 	},
 	sassOptions: {
 		includePaths: [path.join(__dirname, "styles")],

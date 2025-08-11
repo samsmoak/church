@@ -26,13 +26,19 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
+			<head>
+				<link
+					href='https://fonts.googleapis.com/css2?family=Lobster&family=Redressed&family=Shizuru&family=Open+Sans&family=Architects+Daughter&family=Yanone+Kaffeesatz&family=Roboto&display=swap'
+					rel='stylesheet'
+				/>
+			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased `}
 			>
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
-			<Footer />
 		</html>
 	);
 }

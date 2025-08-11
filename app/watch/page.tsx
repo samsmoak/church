@@ -4,7 +4,7 @@ import SectionW2 from "./SectionW2/SectionW2";
 
 function Watch() {
 	return (
-		<div>
+		<div className=''>
 			<SectionW1 />
 			<SectionW2 />
 		</div>

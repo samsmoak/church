@@ -51,7 +51,7 @@ const Section3: React.FC = () => {
 				</div>
 
 				{/* Heading and Description */}
-				<div className='text-center max-w-4xl mx-auto mb-12 md:mb-16'>
+				<div className='text-center max-w-4xl mx-auto mb-12 md:mb-16 '>
 					<h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-4'>
 						Finding your place starts here.
 					</h1>

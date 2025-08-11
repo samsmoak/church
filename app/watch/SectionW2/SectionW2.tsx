@@ -81,22 +81,43 @@ const WatchPage = () => {
 	}, [selectedSeries, selectedSpeaker, selectedTopic]);
 
 	if (!featuredSermon) {
-		return <div className='text-center py-8'>No sermons found.</div>;
+		return (
+			<div className='text-center py-8 text-gray-300 bg-[#1A1A1A] min-h-screen'>
+				No sermons found.
+			</div>
+		);
 	}
 
 	return (
-		<div className='bg-white min-h-screen font-sans'>
-			<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+		<div className='relative min-h-screen bg-[#1A1A1A] font-sans'>
+			{/* Background Image */}
+			<div className='absolute inset-0'>
+				<Image
+					src='/assets/come.jpg'
+					alt='Church community gathering'
+					fill
+					className='object-cover opacity-10'
+					quality={85}
+					sizes='100vw'
+					priority
+				/>
+			</div>
+			{/* Gradient Overlay */}
+			<div className='absolute inset-0 bg-gradient-to-b from-[#333333]/50 to-transparent' />
+
+			<div className='relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20'>
 				{/* Filters Section */}
-				<div className='bg-gray-100 py-3 flex flex-col md:flex-row justify-center gap-4 md:gap-6 rounded-md mb-12 px-4'>
+				<div className='bg-[#333333]/90 py-4 sm:py-5 px-4 sm:px-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-6 rounded-xl mb-10 sm:mb-12 shadow-md border border-[#C25020]/20'>
 					<select
 						value={selectedSeries}
 						onChange={(e) => setSelectedSeries(e.target.value)}
-						className='bg-white border border-gray-300 px-4 py-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500'
+						className='bg-[#333333] border border-[#C25020]/40 px-3 sm:px-4 py-2 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#C25020] transition-all duration-300'
 					>
-						<option value=''>- Browse Series -</option>
+						<option value='' className='text-gray-300'>
+							- Browse Series -
+						</option>
 						{seriesOptions.map((option) => (
-							<option key={option} value={option}>
+							<option key={option} value={option} className='text-gray-300'>
 								{option}
 							</option>
 						))}
@@ -105,11 +126,13 @@ const WatchPage = () => {
 					<select
 						value={selectedSpeaker}
 						onChange={(e) => setSelectedSpeaker(e.target.value)}
-						className='bg-white border border-gray-300 px-4 py-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500'
+						className='bg-[#333333] border border-[#C25020]/40 px-3 sm:px-4 py-2 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#C25020] transition-all duration-300'
 					>
-						<option value=''>- Browse Speakers -</option>
+						<option value='' className='text-gray-300'>
+							- Browse Speakers -
+						</option>
 						{speakerOptions.map((option) => (
-							<option key={option} value={option}>
+							<option key={option} value={option} className='text-gray-300'>
 								{option}
 							</option>
 						))}
@@ -118,11 +141,13 @@ const WatchPage = () => {
 					<select
 						value={selectedTopic}
 						onChange={(e) => setSelectedTopic(e.target.value)}
-						className='bg-white border border-gray-300 px-4 py-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500'
+						className='bg-[#333333] border border-[#C25020]/40 px-3 sm:px-4 py-2 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#C25020] transition-all duration-300'
 					>
-						<option value=''>- Browse Topics -</option>
+						<option value='' className='text-gray-300'>
+							- Browse Topics -
+						</option>
 						{topicOptions.map((option) => (
-							<option key={option} value={option}>
+							<option key={option} value={option} className='text-gray-300'>
 								{option}
 							</option>
 						))}
@@ -130,16 +155,16 @@ const WatchPage = () => {
 				</div>
 
 				{/* Featured Sermon Section */}
-				<h2 className='text-center text-2xl font-bold text-gray-800 mb-6'>
+				<h2 className='text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-6 sm:mb-8 font-serif'>
 					{selectedSermonId ? "Selected Message" : "Latest Message"}
 				</h2>
 
-				<div className='mb-16'>
-					<h3 className='text-center text-xl font-semibold text-gray-900 mb-4'>
+				<div className='mb-12 sm:mb-16'>
+					<h3 className='text-center text-lg sm:text-xl md:text-2xl font-semibold text-[#C25020] mb-4 sm:mb-6 font-serif'>
 						{featuredSermon.title}
 					</h3>
 
-					<div className='relative mx-auto max-w-4xl aspect-video bg-gray-200 rounded-lg overflow-hidden'>
+					<div className='relative mx-auto max-w-4xl aspect-video bg-[#333333]/80 rounded-xl overflow-hidden shadow-md border border-[#C25020]/20 group'>
 						{playMode === "video" ? (
 							<iframe
 								width='100%'
@@ -152,8 +177,11 @@ const WatchPage = () => {
 								className='w-full h-full'
 							></iframe>
 						) : playMode === "audio" ? (
-							<div className='flex items-center justify-center h-full bg-black'>
-								<audio controls className='w-full max-w-md'>
+							<div className='flex items-center justify-center h-full bg-[#333333]'>
+								<audio
+									controls
+									className='w-full max-w-md bg-[#333333] text-[#C25020]'
+								>
 									<source src={featuredSermon.audioUrl} type='audio/mpeg' />
 									Your browser does not support the audio element.
 								</audio>
@@ -165,18 +193,18 @@ const WatchPage = () => {
 									height={720}
 									src={featuredSermon.thumbnail}
 									alt={featuredSermon.title}
-									className='object-cover'
+									className='object-cover transition-transform duration-500 group-hover:scale-105'
 									priority
 								/>
-								<div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-30'>
+								<div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all duration-300'>
 									<button
 										onClick={() => handlePlay(featuredSermon.id, "video")}
-										className='bg-red-600 text-white rounded-full p-4 md:p-6 hover:bg-red-700 transition'
+										className='bg-[#C25020] text-white rounded-full p-3 sm:p-4 md:p-5 hover:bg-[#A23E18] transition-all duration-300 shadow-md hover:shadow-[#C25020]/40'
 										aria-label='Play video'
 									>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
-											className='h-8 w-8'
+											className='h-6 sm:h-8 w-6 sm:w-8'
 											viewBox='0 0 20 20'
 											fill='currentColor'
 										>
@@ -188,33 +216,35 @@ const WatchPage = () => {
 						)}
 					</div>
 
-					<div className='flex flex-wrap justify-center gap-4 mt-6'>
+					<div className='flex flex-wrap justify-center gap-3 sm:gap-4 mt-4 sm:mt-6'>
 						<a
 							href={featuredSermon.videoUrl.replace("/embed/", "/watch?v=")}
 							target='_blank'
 							rel='noopener noreferrer'
-							className='bg-orange-500 text-white px-6 py-2 rounded-md font-medium hover:bg-orange-600 transition'
+							className='px-4 sm:px-6 py-2 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 shadow-md hover:shadow-[#C25020]/40 group'
 						>
 							Watch on YouTube
 						</a>
 						<button
 							onClick={() => handlePlay(featuredSermon.id, "video")}
-							className='bg-orange-500 text-white px-6 py-2 rounded-md font-medium hover:bg-orange-600 transition'
+							className='px-4 sm:px-6 py-2 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 shadow-md hover:shadow-[#C25020]/40 group'
 						>
 							Watch
 						</button>
 						<button
 							onClick={() => handlePlay(featuredSermon.id, "audio")}
-							className='bg-orange-500 text-white px-6 py-2 rounded-md font-medium hover:bg-orange-600 transition'
+							className='px-4 sm:px-6 py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
 						>
 							Listen
 						</button>
 					</div>
 
 					{featuredSermon.description && (
-						<div className='mt-6 max-w-3xl mx-auto'>
-							<p className='text-gray-600'>{featuredSermon.description}</p>
-							<p className='text-gray-500 mt-2'>
+						<div className='mt-4 sm:mt-6 max-w-3xl mx-auto text-center'>
+							<p className='text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed'>
+								{featuredSermon.description}
+							</p>
+							<p className='text-gray-400 text-xs sm:text-sm mt-2'>
 								Scripture: {featuredSermon.scripture}
 							</p>
 						</div>
@@ -222,23 +252,23 @@ const WatchPage = () => {
 				</div>
 
 				{/* Sermon List Section */}
-				<div className='mt-16'>
+				<div className='mt-12 sm:mt-16'>
 					{paginatedSermons.length > 0 ? (
 						<>
-							<h3 className='text-xl font-bold text-gray-800 mb-6'>
+							<h3 className='text-xl sm:text-2xl md:text-3xl font-extrabold text-white mb-6 sm:mb-8 font-serif'>
 								All Messages
 							</h3>
-							<div className='space-y-4'>
+							<div className='space-y-4 sm:space-y-6'>
 								{paginatedSermons.map((sermon) => (
 									<div
 										key={sermon.id}
-										className='flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 border-b border-gray-200 last:border-b-0'
+										className='flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 sm:py-4 px-4 sm:px-6 bg-[#333333]/80 rounded-lg shadow-md border border-[#C25020]/20 hover:shadow-[#C25020]/40 hover:border-[#C25020]/50 transition-all duration-300 group'
 									>
-										<div className='flex-1 mb-2 sm:mb-0'>
-											<h4 className='font-semibold text-gray-900'>
+										<div className='relative flex-1 mb-2 sm:mb-0'>
+											<h4 className='font-semibold text-base sm:text-lg text-white'>
 												{sermon.title}
 											</h4>
-											<p className='text-sm text-gray-600'>
+											<p className='text-xs sm:text-sm text-gray-300'>
 												{sermon.speaker} • {sermon.series} •{" "}
 												{new Date(sermon.date).toLocaleDateString("en-US", {
 													year: "numeric",
@@ -247,16 +277,16 @@ const WatchPage = () => {
 												})}
 											</p>
 										</div>
-										<div className='flex gap-4'>
+										<div className='flex gap-3 sm:gap-4'>
 											<button
 												onClick={() => handlePlay(sermon.id, "video")}
-												className='text-orange-500 font-medium hover:underline'
+												className='px-3 sm:px-4 py-1 sm:py-2 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 shadow-md hover:shadow-[#C25020]/40 group'
 											>
 												Watch
 											</button>
 											<button
 												onClick={() => handlePlay(sermon.id, "audio")}
-												className='text-orange-500 font-medium hover:underline'
+												className='px-3 sm:px-4 py-1 sm:py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
 											>
 												Listen
 											</button>
@@ -266,7 +296,7 @@ const WatchPage = () => {
 							</div>
 						</>
 					) : (
-						<div className='text-center py-8 text-gray-600'>
+						<div className='text-center py-8 text-gray-300'>
 							No sermons match your selected filters.
 						</div>
 					)}
@@ -274,15 +304,15 @@ const WatchPage = () => {
 
 				{/* Pagination Section */}
 				{totalPages > 1 && (
-					<div className='flex justify-center mt-12 gap-2'>
+					<div className='flex justify-center mt-10 sm:mt-12 gap-2 sm:gap-3'>
 						{Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
 							<button
 								key={page}
 								onClick={() => setCurrentPage(page)}
-								className={`w-10 h-10 flex items-center justify-center rounded-full font-medium transition ${
+								className={`w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full font-semibold transition-all duration-300 ${
 									page === currentPage
-										? "bg-orange-500 text-white"
-										: "bg-gray-200 text-gray-700 hover:bg-gray-300"
+										? "bg-[#C25020] text-white shadow-md"
+										: "bg-[#333333] text-gray-200 border border-[#C25020]/40 hover:bg-[#C25020]/80 hover:text-white"
 								}`}
 								aria-label={`Go to page ${page}`}
 							>

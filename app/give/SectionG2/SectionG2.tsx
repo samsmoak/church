@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import {
 	FaMobileAlt,
 	FaEnvelope,
@@ -14,166 +16,167 @@ import {
 const GivePage: React.FC = () => {
 	return (
 		<div className='min-h-screen font-sans'>
-			{/* Hero Section */}
-			<section className='bg-white py-16 md:py-24 text-center'>
-				<div className='max-w-4xl mx-auto px-4'>
-					<h1 className='text-3xl md:text-5xl font-bold text-black'>
-						Your generosity fuels the mission!
-					</h1>
-					<p className='mt-4 text-base md:text-lg text-gray-600 max-w-3xl mx-auto'>
-						Your giving enables us to provide resources needed to grow our
-						current ministries, bless our community, and increase our role in
-						church planting both here and around the world.
-					</p>
-					<a
-						href='https://twocitieschurch.churchcenter.com/giving?open-in-church-center-modal=true'
-						target='_blank'
-						rel='noopener noreferrer'
-						className='mt-8 inline-block bg-orange-500 text-white px-6 py-2 rounded-md font-medium hover:bg-orange-600 transition'
-					>
-						Give Online
-					</a>
-				</div>
-			</section>
-
 			{/* Info Section */}
-			<section className='bg-gray-100 py-16 md:py-24 text-center'>
-				<div className='max-w-4xl mx-auto px-4'>
-					<h2 className='text-2xl md:text-3xl font-bold text-black'>
+			<section className='bg-[#1A1A1A] py-12 sm:py-16 md:py-20 lg:py-24 text-center'>
+				<div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
+					<p className='text-xs sm:text-sm md:text-base uppercase tracking-wider text-[#C25020] mb-2 sm:mb-3 md:mb-4 font-sans'>
+						About Your Giving
+					</p>
+					<h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12 font-serif'>
 						Here are a few things you may like to know about your giving to Two
 						Cities Church:
 					</h2>
-					<div className='mt-12 grid md:grid-cols-2 gap-8'>
-						<div className='text-left'>
-							<div className='flex items-start'>
-								<div className='bg-orange-500 text-white rounded-full p-2 mr-4 flex-shrink-0'>
-									<FaUniversity className='w-4 h-4' />{" "}
-									{/* Placeholder icon, adjust as needed */}
-								</div>
-								<div>
-									<h3 className='font-bold text-lg'>
-										Your giving is confidential.
-									</h3>
-									<p className='text-gray-600'>
-										Your name or amount that you give never goes beyond our
-										financial department.
-									</p>
-								</div>
+					<div className='grid sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10'>
+						<div className='text-left flex items-start'>
+							<div className='bg-[#C25020] text-white rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0'>
+								<FaUniversity className='w-4 sm:w-5 h-4 sm:h-5' />
+							</div>
+							<div>
+								<h3 className='font-bold text-base sm:text-lg text-white'>
+									Your giving is confidential.
+								</h3>
+								<p className='text-gray-300 text-sm sm:text-base'>
+									Your name or amount that you give never goes beyond our
+									financial department.
+								</p>
 							</div>
 						</div>
-						<div className='text-left'>
-							<div className='flex items-start'>
-								<div className='bg-orange-500 text-white rounded-full p-2 mr-4 flex-shrink-0'>
-									<FaUniversity className='w-4 h-4' />
-								</div>
-								<div>
-									<h3 className='font-bold text-lg'>
-										Your giving is 100% tax deductible.
-									</h3>
-									<p className='text-gray-600'>
-										We are a qualified 501c3 organization.
-									</p>
-								</div>
+						<div className='text-left flex items-start'>
+							<div className='bg-[#C25020] text-white rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0'>
+								<FaUniversity className='w-4 sm:w-5 h-4 sm:h-5' />
+							</div>
+							<div>
+								<h3 className='font-bold text-base sm:text-lg text-white'>
+									Your giving is 100% tax deductible.
+								</h3>
+								<p className='text-gray-300 text-sm sm:text-base'>
+									We are a qualified 501c3 organization.
+								</p>
 							</div>
 						</div>
-						<div className='text-left'>
-							<div className='flex items-start'>
-								<div className='bg-orange-500 text-white rounded-full p-2 mr-4 flex-shrink-0'>
-									<FaUniversity className='w-4 h-4' />
-								</div>
-								<div>
-									<h3 className='font-bold text-lg'>
-										You can check your giving at any time.
-									</h3>
-									<p className='text-gray-600'>
-										Through the year, you can check your giving statement
-										online, and you will receive year end giving statements.
-									</p>
-								</div>
+						<div className='text-left flex items-start'>
+							<div className='bg-[#C25020] text-white rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0'>
+								<FaUniversity className='w-4 sm:w-5 h-4 sm:h-5' />
+							</div>
+							<div>
+								<h3 className='font-bold text-base sm:text-lg text-white'>
+									You can check your giving at any time.
+								</h3>
+								<p className='text-gray-300 text-sm sm:text-base'>
+									Through the year, you can check your giving statement online,
+									and you will receive year end giving statements.
+								</p>
 							</div>
 						</div>
-						<div className='text-left'>
-							<div className='flex items-start'>
-								<div className='bg-orange-500 text-white rounded-full p-2 mr-4 flex-shrink-0'>
-									<FaUniversity className='w-4 h-4' />
-								</div>
-								<div>
-									<h3 className='font-bold text-lg'>
-										Your giving is stewarded well.
-									</h3>
-									<p className='text-gray-600'>
-										You can be confident your gifts are wisely managed so that
-										every dollar is maximized for ministry and mission.
-									</p>
-								</div>
+						<div className='text-left flex items-start'>
+							<div className='bg-[#C25020] text-white rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0'>
+								<FaUniversity className='w-4 sm:w-5 h-4 sm:h-5' />
+							</div>
+							<div>
+								<h3 className='font-bold text-base sm:text-lg text-white'>
+									Your giving is stewarded well.
+								</h3>
+								<p className='text-gray-300 text-sm sm:text-base'>
+									You can be confident your gifts are wisely managed so that
+									every dollar is maximized for ministry and mission.
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* Ways to Give Section - Updated with third image data and icons */}
-			<section className='bg-black text-white py-16 md:py-24'>
-				<div className='max-w-md mx-auto px-4'>
-					<p className='text-xs uppercase tracking-wider text-gray-400'>
-						Giving Platforms
-					</p>
-					<h2 className='text-4xl md:text-5xl font-bold uppercase mt-2'>
-						Ways To Give
-					</h2>
-					<div className='mt-8 space-y-6 text-lg'>
-						<div className='flex items-center'>
-							<FaMobileAlt className='w-6 h-6 mr-4' />
-							<span>Zelle 302-397-1397</span>
+			{/* Ways to Give Section */}
+			<section className='relative w-full h-auto min-h-[450px] sm:min-h-[500px] md:h-[550px] lg:h-[650px] flex flex-col md:flex-row'>
+				{/* Left Content Section */}
+				<div className='relative w-full md:w-1/2 h-[300px] sm:h-[350px] md:h-full bg-[#333333]'>
+					<div className='absolute inset-0'>
+						<Image
+							src='/assets/come.jpg'
+							alt='Church community gathering'
+							fill
+							className='object-cover opacity-10'
+							quality={85}
+							sizes='(max-width: 768px) 100vw, 50vw'
+						/>
+					</div>
+					<div className='relative h-full flex flex-col justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-10 md:py-12 text-gray-200'>
+						<p className='text-xs sm:text-sm md:text-base uppercase tracking-wider text-[#C25020] mb-2 sm:mb-3 md:mb-4 font-sans'>
+							Giving Platforms
+						</p>
+						<h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-6 sm:mb-8 font-serif'>
+							Ways To Give
+						</h2>
+						<div className='space-y-4 sm:space-y-5 md:space-y-6 text-base sm:text-lg'>
+							<div className='flex items-center group'>
+								<FaMobileAlt className='w-5 sm:w-6 h-5 sm:h-6 mr-3 sm:mr-4 text-[#C25020] group-hover:scale-110 transition-transform duration-300' />
+								<span>Zelle 302-397-1397</span>
+							</div>
+							<div className='flex items-center group'>
+								<FaEnvelope className='w-5 sm:w-6 h-5 sm:h-6 mr-3 sm:mr-4 text-[#C25020] group-hover:scale-110 transition-transform duration-300' />
+								<span>PayPal Stephenftsm@icloud.com</span>
+							</div>
+							<div className='flex items-center group'>
+								<FaDollarSign className='w-5 sm:w-6 h-5 sm:h-6 mr-3 sm:mr-4 text-[#C25020] group-hover:scale-110 transition-transform duration-300' />
+								<span>CashApp $ftsm522</span>
+							</div>
+							<div className='flex items-center group'>
+								<FaUniversity className='w-5 sm:w-6 h-5 sm:h-6 mr-3 sm:mr-4 text-[#C25020] group-hover:scale-110 transition-transform duration-300' />
+								<span>Check / Bank Transfer</span>
+							</div>
 						</div>
-						<div className='flex items-center'>
-							<FaEnvelope className='w-6 h-6 mr-4' />
-							<span>PayPal Stephenftsm@icloud.com</span>
-						</div>
-						<div className='flex items-center'>
-							<FaDollarSign className='w-6 h-6 mr-4' />
-							<span>CashApp $ftsn522</span>
-						</div>
-						<div className='flex items-center'>
-							<FaUniversity className='w-6 h-6 mr-4' />
-							<span>Check / Bank Transfer</span>
+						<div className='mt-6 sm:mt-8 flex flex-wrap items-center justify-start text-xs sm:text-sm gap-2 sm:gap-3'>
+							<Link
+								href='https://www.ftsm522.com'
+								className='px-3 py-1 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-1 shadow-md hover:shadow-[#C25020]/40 group'
+							>
+								www.ftsm522.com
+							</Link>
+							<span className='mx-2 sm:mx-3 text-gray-200'>|</span>
+							<Link
+								href='https://www.instagram.com/FTSM522/'
+								className='px-3 py-1 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-1 shadow-md hover:shadow-[#C25020]/40 group'
+							>
+								@FTSM522
+							</Link>
+							<Link
+								href='https://www.facebook.com/FTSM522/'
+								className='p-2 bg-[#C25020] text-white rounded-full hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-[#C25020]/40 group'
+							>
+								<FaFacebookF className='w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform duration-300' />
+							</Link>
+							<Link
+								href='https://www.instagram.com/FTSM522/'
+								className='p-2 bg-[#C25020] text-white rounded-full hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-[#C25020]/40 group'
+							>
+								<FaInstagram className='w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform duration-300' />
+							</Link>
+							<Link
+								href='https://www.youtube.com/'
+								className='p-2 bg-[#C25020] text-white rounded-full hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-[#C25020]/40 group'
+							>
+								<FaYoutube className='w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform duration-300' />
+							</Link>
+							<Link
+								href='https://x.com/'
+								className='p-2 bg-[#C25020] text-white rounded-full hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-[#C25020]/40 group'
+							>
+								<FaTwitter className='w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform duration-300' />
+							</Link>
 						</div>
 					</div>
-					<div className='mt-8 flex items-center justify-start text-sm'>
-						<a href='https://www.ftsm522.com' className='mr-4 hover:underline'>
-							www.ftsm522.com
-						</a>
-						<span className='mr-4'>|</span>
-						<a
-							href='https://www.instagram.com/FTSM522/'
-							className='mr-4 hover:underline'
-						>
-							@FTSM522
-						</a>
-						<a
-							href='https://www.facebook.com/FTSM522/'
-							className='text-white hover:text-gray-300 mr-2'
-						>
-							<FaFacebookF className='inline w-4 h-4' />
-						</a>
-						<a
-							href='https://www.instagram.com/FTSM522/'
-							className='text-white hover:text-gray-300 mr-2'
-						>
-							<FaInstagram className='inline w-4 h-4' />
-						</a>
-						<a
-							href='https://www.youtube.com/'
-							className='text-white hover:text-gray-300 mr-2'
-						>
-							<FaYoutube className='inline w-4 h-4' />
-						</a>{" "}
-						{/* Assuming YouTube */}
-						<a href='https://x.com/' className='text-white hover:text-gray-300'>
-							<FaTwitter className='inline w-4 h-4' />
-						</a>{" "}
-						{/* Assuming Twitter/X */}
-					</div>
+				</div>
+				{/* Right Image Section */}
+				<div className='relative w-full md:w-1/2 h-[300px] sm:h-[350px] md:h-full'>
+					<Image
+						src='/assets/pray.jpg'
+						alt='Community in prayer'
+						fill
+						className='object-cover transition-transform duration-500 group-hover:scale-105'
+						quality={85}
+						sizes='(max-width: 768px) 100vw, 50vw'
+					/>
+					<div className='absolute inset-0 bg-gradient-to-l from-[#333333]/30 to-transparent' />
 				</div>
 			</section>
 		</div>
