@@ -113,7 +113,7 @@ const HeroSection: React.FC = () => {
 				</div>
 
 				{/* Right Content - Scroller */}
-				<div className='relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]'>
+				<div className='relative md:h-[500px] lg:h-[600px]'>
 					<InfiniteScroller />
 				</div>
 			</div>
