@@ -8,7 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection: React.FC = () => {
 	return (
-		<div className='relative w-full min-h-screen bg-[#333333] py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-12'>
+		<div className='relative mt-16 w-full min-h-screen bg-[#333333] py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-12'>
 			{/* Background Image */}
 			<div className='absolute inset-0'>
 				<Image
