@@ -15,21 +15,21 @@ const persons: Person[] = [
 		image: "/assets/church8.jpeg",
 		title: "What is a gathering like?",
 		description:
-			"Two Cities Church exists to see every man, woman, and child in Winston-Salem have repeated opportunities to see, hear, and respond to the gospel. Every week, you will find passionate and authentic worship, gospel-centered preaching, and a vibrant kids ministry. Whether you’ve been around church all of your life or this is your first time stepping foot in a church, we want to make your experience welcoming.",
+			"522Church exists to see every man, woman, and child in Winston-Salem have repeated opportunities to see, hear, and respond to the gospel. Every week, you will find passionate and authentic worship, gospel-centered preaching, and a vibrant kids ministry. Whether you’ve been around church all of your life or this is your first time stepping foot in a church, we want to make your experience welcoming.",
 		icon: <Users className='w-8 h-8 text-[#C25020]' />,
 	},
 	{
 		image: "/assets/church1.jpeg",
 		title: "What type of music do you sing?",
 		description:
-			"At Two Cities, every gathering is filled with music rooted in God’s Word and centered on His character. Our desire is that everyone who attends our worship services leaves with a deep sense of awe and wonder at all Jesus has done for us. We are committed to singing psalms, hymns, and spiritual songs (Colossians 3:16) through heartfelt, modern worship music that is both meaningful and Christ-focused.",
+			"At 522Church, every gathering is filled with music rooted in God’s Word and centered on His character. Our desire is that everyone who attends our worship services leaves with a deep sense of awe and wonder at all Jesus has done for us. We are committed to singing psalms, hymns, and spiritual songs (Colossians 3:16) through heartfelt, modern worship music that is both meaningful and Christ-focused.",
 		icon: <Music className='w-8 h-8 text-[#C25020]' />,
 	},
 	{
 		image: "/assets/church4.jpeg",
 		title: "How is the teaching?",
 		description:
-			"At Two Cities, our preaching is expository in nature and gospel-centered in content. We aim to clearly unpack what each passage of Scripture says while showing how it fits into the overarching story of the Bible. Every sermon points to the central truth that we are called to love God in response to His great love for us—a love most clearly displayed in the sacrificial death of Jesus. The Gospel is always the focus, and Jesus is always the hero of every message.",
+			"At 522Church, our preaching is expository in nature and gospel-centered in content. We aim to clearly unpack what each passage of Scripture says while showing how it fits into the overarching story of the Bible. Every sermon points to the central truth that we are called to love God in response to His great love for us—a love most clearly displayed in the sacrificial death of Jesus. The Gospel is always the focus, and Jesus is always the hero of every message.",
 		icon: <BookOpen className='w-8 h-8 text-[#C25020]' />,
 	},
 ];
