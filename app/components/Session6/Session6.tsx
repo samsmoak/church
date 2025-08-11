@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { ArrowRight, PlayCircle } from "lucide-react"; // Using lucide-react for modern icons
+import Link from "next/link";
 
 const Session6: React.FC = () => {
 	return (
@@ -32,16 +33,19 @@ const Session6: React.FC = () => {
 						Join us this Sunday for vibrant worship, gospel-centered teaching,
 						and meaningful connections with others on the same journey.
 					</p>
-
 					<div className='mt-10 flex flex-col sm:flex-row justify-center gap-4'>
-						<button className='px-8 py-4 bg-[#C25020] hover:bg-[#A23E18] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 focus:scale-100 active:scale-95 shadow-lg hover:shadow-[#C25020]/40 flex items-center justify-center gap-2'>
-							<PlayCircle className='w-5 h-5' />
-							Watch a Past Sermon
-						</button>
-						<button className='px-8 py-4 bg-transparent border-2 border-gray-200 hover:bg-gray-200/10 text-gray-200 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 focus:scale-100 active:scale-95 shadow-lg flex items-center justify-center gap-2'>
-							<ArrowRight className='w-5 h-5' />
-							Plan Your Visit
-						</button>
+						<Link href='/watch' passHref>
+							<button className='px-8 py-4 bg-[#C25020] hover:bg-[#A23E18] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 focus:scale-100 active:scale-95 shadow-lg hover:shadow-[#C25020]/40 flex items-center justify-center gap-2'>
+								<PlayCircle className='w-5 h-5' />
+								Watch a Past Sermon
+							</button>
+						</Link>
+						<Link href='/eventss' passHref>
+							<button className='px-8 py-4 bg-transparent border-2 border-gray-200 hover:bg-gray-200/10 text-gray-200 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 focus:scale-100 active:scale-95 shadow-lg flex items-center justify-center gap-2'>
+								<ArrowRight className='w-5 h-5' />
+								Plan Your Visit
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
