@@ -114,6 +114,15 @@ const SideMenu = ({ isOpen, onClose }: SideMenuProps) => {
 					>
 						GIVE
 					</Link>
+					<Link
+						href='/about'
+						className={`py-2 px-4 rounded hover:bg-neutral-700 transition-colors ${
+							pathname === "/about" ? "text-orange-500 font-bold" : ""
+						}`}
+						onClick={onClose}
+					>
+						ABOUT
+					</Link>
 				</nav>
 			</div>
 		</div>

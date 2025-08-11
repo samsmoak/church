@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
 						</div>
 					</div>
 
-					<div className='flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4'>
+					<div className='flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 pt-4'>
 						<Link href='#' passHref>
 							<button className='px-6 sm:px-8 py-2 sm:py-3 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'>
 								View Upcoming Events
