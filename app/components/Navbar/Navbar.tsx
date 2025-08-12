@@ -52,14 +52,14 @@ const Navbar = () => {
 						>
 							EVENTS
 						</Link>
-						{/* <Link
+						<Link
 							href='/leadership'
 							className={`hover:text-gray-300 transition-colors ${
 								pathname === "/leadership" ? "border-b-2 border-orange-500" : ""
 							}`}
 						>
 							LEADERSHIP
-						</Link> */}
+						</Link>
 						<Link
 							href='/ministry'
 							className={`hover:text-gray-300 transition-colors ${

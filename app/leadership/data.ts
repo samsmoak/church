@@ -47,24 +47,24 @@ export const members = [
 	{
 		image: "/assets/church43.jpeg",
 		domain: " member",
-		name: "Pearl",
+		name: "group",
 	},
 
 	{
 		image: "/assets/church23.jpeg",
 		domain: " member",
-		name: "Pearl",
+		name: "group",
 	},
 
 	{
 		image: "/assets/church17.jpeg",
 		domain: " member",
-		name: "Pearl",
+		name: "group",
 	},
 	{
 		image: "/assets/church35.jpeg",
 		domain: " member",
-		name: "Pearl",
+		name: "group",
 	},
 	{
 		image: "/assets/church7.jpeg",

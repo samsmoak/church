@@ -41,7 +41,7 @@ const Section2: React.FC = () => {
 								<h3 className='text-lg capitalize font-semibold text-[#333333] font-serif'>
 									{person.name}
 								</h3>
-								<p className='text-sm text-[#C25020] font-sans mt-1 tracking-wide'>
+								<p className='text-sm capitalize text-[#C25020] font-sans mt-1 tracking-wide'>
 									{person.domain}
 								</p>
 							</div>
@@ -113,7 +113,7 @@ const Section2: React.FC = () => {
 								<h3 className='text-lg capitalize font-semibold text-[#333333] font-serif'>
 									{person.name}
 								</h3>
-								<p className='text-sm text-[#C25020] font-sans mt-1 tracking-wide'>
+								<p className='text-sm capitalize text-[#C25020] font-sans mt-1 tracking-wide'>
 									{person.domain}
 								</p>
 							</div>

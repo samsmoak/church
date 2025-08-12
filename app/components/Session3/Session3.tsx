@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const Section3: React.FC = () => {
 	const [isPlaying, setIsPlaying] = useState(false);
-	const videoId = "_e-gOadKZfQ";
+	const videoId = "JdecgbY7Abk";
 	const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
 	// Image data array for cleaner mapping
