@@ -2,7 +2,7 @@ export const pastors = [
 	{
 		image: "/assets/church23.jpeg",
 		domain: "lead pastor",
-		name: "Steve johnson",
+		name: "Steve jason",
 	},
 	{
 		image: "/assets/church25.jpeg",
@@ -12,7 +12,7 @@ export const pastors = [
 	{
 		image: "/assets/church12.jpeg",
 		domain: " pastor",
-		name: "ama",
+		name: "margaret",
 	},
 ];
 export const elders = [
@@ -30,9 +30,41 @@ export const elders = [
 
 export const members = [
 	{
+		image: "/assets/church62.jpeg",
+		domain: " members",
+		name: "group",
+	},
+	{
+		image: "/assets/church60.jpeg",
+		domain: " members",
+		name: "group",
+	},
+	{
 		image: "/assets/church6.jpeg",
 		domain: " members",
 		name: "group",
+	},
+	{
+		image: "/assets/church43.jpeg",
+		domain: " member",
+		name: "Pearl",
+	},
+
+	{
+		image: "/assets/church23.jpeg",
+		domain: " member",
+		name: "Pearl",
+	},
+
+	{
+		image: "/assets/church17.jpeg",
+		domain: " member",
+		name: "Pearl",
+	},
+	{
+		image: "/assets/church35.jpeg",
+		domain: " member",
+		name: "Pearl",
 	},
 	{
 		image: "/assets/church7.jpeg",
@@ -40,13 +72,8 @@ export const members = [
 		name: "group",
 	},
 	{
-		image: "/assets/church5.jpeg",
+		image: "/assets/church7.jpeg",
 		domain: " members",
 		name: "group",
-	},
-	{
-		image: "/assets/church27.jpeg",
-		domain: " member",
-		name: "Pearl",
 	},
 ];

@@ -209,10 +209,9 @@ const Footer: React.FC = () => {
 					<div>
 						<h4 className='font-bold text-[#C25020] mb-3 flex items-center gap-2'>
 							<MapPin className='w-5 h-5' />
-							Winston-Salem Location
+							522 Church | Winston-Salem, North Carolina
 						</h4>
 						<p className='text-gray-300'>Sundays at 10:00 AM</p>
-						<p className='text-gray-300'>1001 N. Patterson Ave.</p>
 						<p className='text-gray-300'>Winston-Salem, NC 27101</p>
 					</div>
 					<div>
@@ -227,25 +226,33 @@ const Footer: React.FC = () => {
 						<p className='text-gray-300 flex items-center gap-2'>
 							<Mail className='w-4 h-4' />
 
-							<p>contact:stephenowusujason@gmail.com</p>
+							<p>contact:fruitspirit522@gmail.com</p>
 						</p>
 						<div className='flex space-x-4 mt-4'>
 							<Link
-								href='#'
+								href='https://www.facebook.com/ftsm522'
+								target='_blank'
+								rel='noopener noreferrer'
 								className='text-gray-200 hover:text-[#C25020] transition-colors duration-300'
 								aria-label='Facebook'
 							>
 								<Facebook className='w-6 h-6' />
 							</Link>
+
 							<Link
-								href='#'
+								href='https://www.instagram.com/522church/'
+								target='_blank'
+								rel='noopener noreferrer'
 								className='text-gray-200 hover:text-[#C25020] transition-colors duration-300'
 								aria-label='Instagram'
 							>
 								<Instagram className='w-6 h-6' />
 							</Link>
+
 							<Link
-								href='#'
+								href='https://www.youtube.com/@The522Church'
+								target='_blank'
+								rel='noopener noreferrer'
 								className='text-gray-200 hover:text-[#C25020] transition-colors duration-300'
 								aria-label='YouTube'
 							>

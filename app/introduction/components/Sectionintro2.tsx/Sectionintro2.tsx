@@ -6,7 +6,7 @@ const Sectionintro2: React.FC = () => {
 			<div className='max-w-4xl mx-auto relative rounded-lg overflow-hidden shadow-lg'>
 				<iframe
 					className='w-full h-64 md:h-96'
-					src='https://www.youtube.com/embed/ET-86N7rykQ'
+					src='https://www.youtube.com/embed/4lAiu28phKI'
 					title='Welcome to Two Cities!'
 					frameBorder='0'
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'

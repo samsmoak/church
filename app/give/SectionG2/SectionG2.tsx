@@ -15,9 +15,9 @@ import {
 
 const GivePage: React.FC = () => {
 	return (
-		<div className='min-h-screen font-sans'>
+		<div className=' font-sans'>
 			{/* Info Section */}
-			<section className='bg-[#1A1A1A] py-12 sm:py-16 md:py-20 lg:py-24 text-center'>
+			{/* <section className='bg-[#1A1A1A] py-12 sm:py-16 md:py-20 lg:py-24 text-center'>
 				<div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<p className='text-xs sm:text-sm md:text-base uppercase tracking-wider text-[#C25020] mb-2 sm:mb-3 md:mb-4 font-sans'>
 						About Your Giving
@@ -84,7 +84,7 @@ const GivePage: React.FC = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* Ways to Give Section */}
 			<section className='relative w-full h-auto min-h-[450px] sm:min-h-[500px] md:h-[550px] lg:h-[650px] flex flex-col md:flex-row'>
@@ -169,7 +169,7 @@ const GivePage: React.FC = () => {
 				{/* Right Image Section */}
 				<div className='relative w-full md:w-1/2 h-[300px] sm:h-[350px] md:h-full'>
 					<Image
-						src='/assets/pray.jpg'
+						src='/assets/church34.jpeg'
 						alt='Community in prayer'
 						fill
 						className='object-cover transition-transform duration-500 group-hover:scale-105'

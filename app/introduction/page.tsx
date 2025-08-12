@@ -8,9 +8,9 @@ function Introduction() {
 	return (
 		<div>
 			<Sectionintro1 />
-			<Sectionintro2 />
+			{/* <Sectionintro2 /> */}
 			<Sectionintro3 />
-			<Sectionintro4 />
+			{/* <Sectionintro4 /> */}
 		</div>
 	);
 }

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { sermons } from "../data"; // Import sermon data from external file
 import Image from "next/image";
+import { FaTiktok } from "react-icons/fa";
 
 interface Sermon {
 	id: number;
@@ -231,12 +232,21 @@ const WatchPage = () => {
 						>
 							Watch
 						</button>
-						<button
+						{/* <button
 							onClick={() => handlePlay(featuredSermon.id, "audio")}
 							className='px-4 sm:px-6 py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
 						>
 							Listen
-						</button>
+						</button> */}
+
+						<a
+							href='https://open.spotify.com/show/6BHs8lkgFdLRTG30O1gMBw'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='px-3 sm:px-4 py-1 sm:py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
+						>
+							Listen
+						</a>
 					</div>
 
 					{featuredSermon.description && (
@@ -284,12 +294,21 @@ const WatchPage = () => {
 											>
 												Watch
 											</button>
-											<button
+											{/* <button
 												onClick={() => handlePlay(sermon.id, "audio")}
 												className='px-3 sm:px-4 py-1 sm:py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
 											>
 												Listen
-											</button>
+											</button> */}
+
+											<a
+												href='https://open.spotify.com/show/6BHs8lkgFdLRTG30O1gMBw'
+												target='_blank'
+												rel='noopener noreferrer'
+												className='px-3 sm:px-4 py-1 sm:py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
+											>
+												Listen
+											</a>
 										</div>
 									</div>
 								))}

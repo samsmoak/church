@@ -39,7 +39,7 @@ const ConferenceSection: React.FC = () => {
 						Join us for our annual Heights Conference as we worship and hear
 						from compelling guest speakers!
 					</p>
-					<ul className='space-y-4 mb-10 text-left max-w-md mx-auto lg:mx-0'>
+					{/* <ul className='space-y-4 mb-10 text-left max-w-md mx-auto lg:mx-0'>
 						<li className='flex items-center text-gray-200'>
 							<span className='text-[#C25020] mr-3'>•</span> Thursday, Sept. 4:
 							6:30PM
@@ -56,7 +56,7 @@ const ConferenceSection: React.FC = () => {
 							<span className='text-[#C25020] mr-3'>•</span> Sunday, Sept. 7:
 							9AM, 11AM, 5PM
 						</li>
-					</ul>
+					</ul> */}
 					<Link
 						href='leadership' // Assuming it links to a speakers section; adjust as needed
 						className='inline-block bg-[#C25020] text-white px-8 py-3 rounded-lg font-semibold uppercase tracking-wide hover:bg-[#A83E15] transition duration-300 shadow-md hover:shadow-lg'

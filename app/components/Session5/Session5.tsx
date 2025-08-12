@@ -62,14 +62,6 @@ const HomeSlider = () => {
 										alt={`Expert ${id + 1}`}
 										className='w-full h-full object-cover'
 									/>
-									<div className='absolute bottom-0 left-0 right-0 text-white px-2 py-1 rounded text-sm font-bold'>
-										<h2 className='text-2xl font-semibold my-4 capitalize'>
-											{item.name}
-										</h2>
-										<p className='capitalize mb-2 py-1 px-2 border-2 border-white'>
-											{item.domain}
-										</p>
-									</div>
 								</div>
 							</div>
 						</SwiperSlide>

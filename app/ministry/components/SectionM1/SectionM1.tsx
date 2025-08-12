@@ -11,7 +11,7 @@ const SectionM1: React.FC = () => {
 			{/* Left Image Section */}
 			<div className='relative w-full md:w-1/2 h-[300px] md:h-full'>
 				<Image
-					src='/assets/pray.jpg'
+					src='/assets/church58.jpeg'
 					alt='Community in prayer'
 					fill
 					className='object-cover transition-transform duration-500 group-hover:scale-105'

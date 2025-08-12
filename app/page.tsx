@@ -8,13 +8,15 @@ import Session5 from "./components/Session5/Session5";
 import { Session } from "inspector";
 import Session6 from "./components/Session6/Session6";
 import Section3 from "./components/Session3/Session3";
+import Banner2 from "./components/Banner/Banner2";
 
 export default function Home() {
 	return (
 		<div className='w-screen mt-24 '>
 			<div className='w-full bg-white'>
 				<div className='py-10 md:px-10 flex justify-center items-center'>
-					<PurposeBanner />
+					{/* <PurposeBanner /> */}
+					<Banner2 />
 				</div>
 
 				<ConferenceSection />

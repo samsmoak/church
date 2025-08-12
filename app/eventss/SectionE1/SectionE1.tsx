@@ -71,7 +71,7 @@ const HeroSection: React.FC = () => {
 					</p>
 
 					{/* Stats */}
-					<div className='grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mt-4 sm:mt-6'>
+					{/* <div className='grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mt-4 sm:mt-6'>
 						<div className='bg-[#333333]/80 p-3 sm:p-4 rounded-lg shadow-md text-center border border-[#C25020]/30 hover:shadow-[#C25020]/40 transition-all duration-300 group'>
 							<div className='text-xl sm:text-2xl md:text-3xl font-bold text-[#C25020] group-hover:scale-105 transition-transform duration-300'>
 								500+
@@ -96,7 +96,7 @@ const HeroSection: React.FC = () => {
 								Annual Events
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					<div className='flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 pt-4'>
 						<Link href='#' passHref>

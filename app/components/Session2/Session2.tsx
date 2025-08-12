@@ -75,9 +75,9 @@ const Section2: React.FC = () => {
 								You need people who know you and know the Bible.
 							</h1>
 							<p className='text-gray-300 text-lg leading-relaxed'>
-								You weren't meant to go through life alone. At Two Cities
-								Church, we're here to help support, challenge, and encourage you
-								as you navigate life, faith, and relationships.
+								You weren't meant to go through life alone. At 522Church, we're
+								here to help support, challenge, and encourage you as you
+								navigate life, faith, and relationships.
 							</p>
 
 							<div className='space-y-6'>
@@ -91,7 +91,7 @@ const Section2: React.FC = () => {
 										<h3 className='font-bold text-xl mb-2'>Winston-Salem</h3>
 										<p className='text-gray-300 flex items-center gap-2 mb-1'>
 											<Clock className='w-4 h-4' />
-											Sundays 9:30AM, 11AM, 5PM
+											Sundays 10:00AM
 										</p>
 										<p className='text-[#C25020] flex items-center gap-2'>
 											<MapPin className='w-4 h-4' />
@@ -103,7 +103,7 @@ const Section2: React.FC = () => {
 										<h3 className='font-bold text-xl mb-2'>Online</h3>
 										<p className='text-gray-300 flex items-center gap-2'>
 											<Globe className='w-4 h-4' />
-											9:30AM, 11AM
+											10:00AM
 										</p>
 									</div>
 								</div>

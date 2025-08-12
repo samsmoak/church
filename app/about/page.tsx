@@ -73,10 +73,10 @@ export default function AboutPage() {
 					</div>
 					<div className='relative h-[600px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500'>
 						<Image
-							src='/assets/church36.jpeg' // Enhanced placeholder for church community image
+							src='/assets/church5.jpeg' // Enhanced placeholder for church community image
 							alt='Our Church Community'
 							fill
-							className='object-cover'
+							className='object-none'
 						/>
 					</div>
 				</div>
@@ -140,7 +140,7 @@ export default function AboutPage() {
 							Pastor Steven Jason
 						</h3>
 						<p className='text-lg leading-relaxed mb-6'>
-							Pastor Steven Jason is the visionary founder and lead pastor of
+							Pastor Steven Jason is the visionary founder and lead Pastor of
 							Fruit of the Spirit Ministries 522 (FTSM 522). The ministry was
 							born from a divine vision he received in 2006 and was officially
 							launched in 2021. However, his calling to ministry started much

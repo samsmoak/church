@@ -35,7 +35,7 @@ const SectionE2: React.FC = () => {
 					</div>
 					<div className='order-1 md:order-2'>
 						<Image
-							src='/assets/church32.jpeg'
+							src='/assets/church49.jpeg'
 							alt='Fruit Conference - Crowd raising hands in worship'
 							width={600}
 							height={400}

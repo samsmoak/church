@@ -38,7 +38,7 @@ const Section2: React.FC = () => {
 								</div>
 							</div>
 							<div className='p-5 text-center bg-white'>
-								<h3 className='text-lg font-semibold text-[#333333] font-serif'>
+								<h3 className='text-lg capitalize font-semibold text-[#333333] font-serif'>
 									{person.name}
 								</h3>
 								<p className='text-sm text-[#C25020] font-sans mt-1 tracking-wide'>
@@ -50,7 +50,7 @@ const Section2: React.FC = () => {
 				</div>
 			</section>
 
-			<section className='py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-16 border-t border-[#C25020]/10'>
+			{/* <section className='py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-16 border-t border-[#C25020]/10'>
 				<h2 className='text-2xl sm:text-3xl lg:text-4xl font-extrabold text-center mb-10 text-[#333333] tracking-wide font-sans'>
 					Our Elders
 				</h2>
@@ -74,7 +74,7 @@ const Section2: React.FC = () => {
 								</div>
 							</div>
 							<div className='p-5 text-center bg-white'>
-								<h3 className='text-lg font-semibold text-[#333333] font-serif'>
+								<h3 className='text-lg capitalize font-semibold text-[#333333] font-serif'>
 									{person.name}
 								</h3>
 								<p className='text-sm text-[#C25020] font-sans mt-1 tracking-wide'>
@@ -84,7 +84,7 @@ const Section2: React.FC = () => {
 						</div>
 					))}
 				</div>
-			</section>
+			</section> */}
 
 			<section className='py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-16 border-t border-[#C25020]/10'>
 				<h2 className='text-2xl sm:text-3xl lg:text-4xl font-extrabold text-center mb-10 text-[#333333] tracking-wide font-sans'>
@@ -110,7 +110,7 @@ const Section2: React.FC = () => {
 								</div>
 							</div>
 							<div className='p-5 text-center bg-white'>
-								<h3 className='text-lg font-semibold text-[#333333] font-serif'>
+								<h3 className='text-lg capitalize font-semibold text-[#333333] font-serif'>
 									{person.name}
 								</h3>
 								<p className='text-sm text-[#C25020] font-sans mt-1 tracking-wide'>

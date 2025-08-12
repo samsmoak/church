@@ -1,10 +1,5 @@
 export const Experts = [
 	{
-		image: "/assets/churchai.png",
-		name: "Melissa",
-		comment: "Life-changing worship experience!",
-	},
-	{
 		image: "/assets/church24.jpeg",
 		name: "Juanita",
 		comment: "The prayer nights renewed my faith",
@@ -21,12 +16,12 @@ export const Experts = [
 	},
 	{
 		image: "/assets/church15.jpeg",
-		name: "Ama",
+		name: "Margaret",
 		comment: "Powerful messages every Sunday",
 	},
 	{
 		image: "/assets/church27.jpeg",
 		name: "Pearl",
-		comment: "Found my spiritual family here",
+		comment: "inspiring worship experiences",
 	},
 ];
