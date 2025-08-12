@@ -71,9 +71,4 @@ export const members = [
 		domain: " members",
 		name: "group",
 	},
-	{
-		image: "/assets/church7.jpeg",
-		domain: " members",
-		name: "group",
-	},
 ];
