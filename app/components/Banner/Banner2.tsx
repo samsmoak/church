@@ -35,7 +35,7 @@ const Banner2: React.FC = () => {
 				</div>
 
 				{/* Image Collage */}
-				<div className='relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-[-100px] sm:mb-[-120px] md:mb-[-150px] lg:mb-[-120px]'>
+				<div className='relative px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-[-100px] sm:mb-[-120px] md:mb-[-150px] lg:mb-[-120px]'>
 					<div className='relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10'>
 						<Image
 							src='/assets/church45.jpeg'
