@@ -36,7 +36,7 @@ const Banner2: React.FC = () => {
 
 				{/* Image Collage */}
 				<div className='relative px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-[-100px] sm:mb-[-120px] md:mb-[-150px] lg:mb-[-120px]'>
-					<div className='relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10'>
+					<div className='relative h-[200px] w-[250px] sm:h-[250px] sm:w-[270px] md:h-[300px] md:w-[320px] lg:h-[350px] lg:w-[210px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10 justify-self-center'>
 						<Image
 							src='/assets/church45.jpeg'
 							alt='Church community 1'
@@ -44,7 +44,7 @@ const Banner2: React.FC = () => {
 							className='object-cover'
 						/>
 					</div>
-					<div className='relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10'>
+					<div className='relative h-[200px] w-[250px] sm:h-[250px] sm:w-[270px] md:h-[300px] md:w-[320px] lg:h-[350px] lg:w-[210px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10 justify-self-center'>
 						<Image
 							src='/assets/church47.jpeg'
 							alt='Church community 2'
@@ -52,7 +52,7 @@ const Banner2: React.FC = () => {
 							className='object-cover'
 						/>
 					</div>
-					<div className='relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10'>
+					<div className='relative h-[200px] w-[250px] sm:h-[250px] sm:w-[270px] md:h-[300px] md:w-[320px] lg:h-[350px] lg:w-[210px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10 justify-self-center'>
 						<Image
 							src='/assets/church44.jpeg'
 							alt='Church community 3'
@@ -60,7 +60,7 @@ const Banner2: React.FC = () => {
 							className='object-cover'
 						/>
 					</div>
-					<div className='relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10'>
+					<div className='relative h-[200px] w-[250px] sm:h-[250px] sm:w-[270px] md:h-[300px] md:w-[320px] lg:h-[350px] lg:w-[210px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 z-10 justify-self-center'>
 						<Image
 							src='/assets/church48.jpeg'
 							alt='Church community 4'
@@ -74,7 +74,7 @@ const Banner2: React.FC = () => {
 				<div className='relative  bg-[#333333] rounded-lg p-6 sm:p-8 md:p-10  gap-6 sm:gap-8 md:gap-10 z-0 mt-[-50px] sm:mt-[-60px] md:mt-[-70px] lg:mt-[-60px]'>
 					{/* Left Text */}
 					<div className='h-40 w-full'></div>
-					<div className='flex gap-4'>
+					<div className=' gap-4 grid grid-cols-1 md:grid-cols-2'>
 						<div className='w-full lg:w-1/2 text-white'>
 							<h3 className='text-2xl sm:text-3xl md:text-4xl font-extrabold font-serif mb-2 sm:mb-3'>
 								Welcome to 522Church
