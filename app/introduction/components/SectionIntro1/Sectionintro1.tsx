@@ -39,7 +39,7 @@ const Sectionintro1: React.FC = () => {
 				{/* Content Overlay */}
 				<div className='relative h-full flex flex-col justify-center items-center text-center px-6 sm:px-8 md:px-12 lg:px-16 py-12 text-gray-200'>
 					<p className='text-sm md:text-base uppercase tracking-wider text-[#C25020] mb-3 md:mb-4 font-sans'>
-						Welcome to Two Cities Church
+						Welcome to 522Church
 					</p>
 					<h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 md:mb-6 font-serif'>
 						First Time Here?
@@ -52,7 +52,7 @@ const Sectionintro1: React.FC = () => {
 					{/* Buttons */}
 					<div className='flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center'>
 						<Link
-							href='#what-to-expect'
+							href='eventss'
 							className='px-6 py-3 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'
 						>
 							<ArrowRight className='w-5 h-5 group-hover:scale-110 transition-transform duration-300' />

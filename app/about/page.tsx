@@ -8,7 +8,7 @@ export default function AboutPage() {
 			{/* Hero Section */}
 			<section className='relative h-[500px] flex items-center justify-center overflow-hidden shadow-xl'>
 				<Image
-					src='/assets/churchfly5.jpg' // Enhanced placeholder for church worship image
+					src='/assets/church75.jpg' // Enhanced placeholder for church worship image
 					alt='Church Worship'
 					fill
 					className='object-cover brightness-60'
