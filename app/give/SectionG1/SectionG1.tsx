@@ -50,7 +50,7 @@ const SectionG1: React.FC = () => {
 					</p>
 
 					{/* Buttons */}
-					<div className='flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center'>
+					{/* <div className='flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center'>
 						<Link
 							href='#give'
 							className='px-6 py-3 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'
@@ -65,7 +65,7 @@ const SectionG1: React.FC = () => {
 							<ArrowRight className='w-5 h-5 group-hover:scale-110 transition-transform duration-300' />
 							Learn More
 						</Link>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>

@@ -100,12 +100,12 @@ const HeroSection: React.FC = () => {
 
 					<div className='flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 pt-4'>
 						<Link href='#' passHref>
-							<button className='px-6 sm:px-8 py-2 sm:py-3 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'>
+							<button className='px-6 cursor-not-allowed sm:px-8 py-2 sm:py-3 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'>
 								View Upcoming Events
 							</button>
 						</Link>
 						<Link href='/about' passHref>
-							<button className='px-6 sm:px-8 py-2 sm:py-3 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 flex items-center justify-center gap-2 shadow-md group'>
+							<button className='px-6 cursor-pointer sm:px-8 py-2 sm:py-3 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 flex items-center justify-center gap-2 shadow-md group'>
 								Learn About Our Ministries
 							</button>
 						</Link>

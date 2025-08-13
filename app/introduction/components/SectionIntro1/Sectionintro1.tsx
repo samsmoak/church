@@ -53,10 +53,10 @@ const Sectionintro1: React.FC = () => {
 					<div className='flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center'>
 						<Link
 							href='eventss'
-							className='px-6 py-3 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'
+							className='px-6 py-3 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-500 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'
 						>
-							<ArrowRight className='w-5 h-5 group-hover:scale-110 transition-transform duration-300' />
-							Plan Your Visit
+							<ArrowRight className='  w-5 h-5 group-hover:scale-110 transition-transform duration-500' />
+							Check Our Events
 						</Link>
 					</div>
 				</div>
