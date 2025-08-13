@@ -66,6 +66,13 @@ const persons: Person[] = [
 		image: "/assets/church4.jpeg",
 		title: "The Authority of Scripture",
 		description:
+			"We believe that the Bible is the inspired, infallible, and authoritative Word of God (2 Timothy 3:16-17; 2 Peter 1:20-21). It is the final authority in all matters of faith, conduct, and doctrine, revealing God’s plan for humanity and His will for our lives.",
+		icon: <BookOpen className='w-8 h-8 text-[#C25020]' />,
+	},
+	{
+		image: "/assets/church4.jpeg",
+		title: "Water Baptism",
+		description:
 			"We believe in baptism by immersion in water as an outward expression of the inward change that occurs when a person places their faith in Jesus Christ (Matthew 28:19; Acts 2:41; Romans 6:4). Baptism symbolizes death to sin, burial with Christ, and resurrection into new life.",
 		icon: <BookOpen className='w-8 h-8 text-[#C25020]' />,
 	},

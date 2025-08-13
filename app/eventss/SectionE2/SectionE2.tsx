@@ -99,7 +99,7 @@ const SectionE2: React.FC = () => {
 					</div>
 					<div className='order-1 md:order-2'>
 						<Image
-							src='/assets/churchfly2.jpeg'
+							src='/assets/church71.jpg'
 							alt='21 Days of Fasting & Prayer - Group raising hands in prayer'
 							width={600}
 							height={400}
@@ -116,7 +116,7 @@ const SectionE2: React.FC = () => {
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center'>
 					<div className='order-1'>
 						<Image
-							src='/assets/churchfly7.jpg'
+							src='/assets/church74.jpg'
 							alt='Night with the King - Church with fireworks at night'
 							width={600}
 							height={400}

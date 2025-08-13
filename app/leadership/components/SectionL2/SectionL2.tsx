@@ -33,9 +33,6 @@ const Section2: React.FC = () => {
 									sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw'
 									priority={index < 4}
 								/>
-								<div className='absolute top-3 left-3 bg-white/90 rounded-full p-2 shadow-sm'>
-									<User className='w-5 h-5 text-[#C25020]' />
-								</div>
 							</div>
 							<div className='p-5 text-center bg-white'>
 								<h3 className='text-lg capitalize font-semibold text-[#333333] font-serif'>
@@ -105,9 +102,6 @@ const Section2: React.FC = () => {
 									sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw'
 									priority={index < 4}
 								/>
-								<div className='absolute top-3 left-3 bg-white/90 rounded-full p-2 shadow-sm'>
-									<User className='w-5 h-5 text-[#C25020]' />
-								</div>
 							</div>
 							<div className='p-5 text-center bg-white'>
 								<h3 className='text-lg capitalize font-semibold text-[#333333] font-serif'>
