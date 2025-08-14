@@ -92,7 +92,7 @@ const GivePage: React.FC = () => {
 				<div className='relative w-full md:w-1/2 h-[300px] sm:h-[350px] md:h-full bg-[#333333]'>
 					<div className='absolute inset-0'>
 						<Image
-							src='/assets/come.jpg'
+							src='/assets/church57.jpeg'
 							alt='Church community gathering'
 							fill
 							className='object-cover opacity-10'

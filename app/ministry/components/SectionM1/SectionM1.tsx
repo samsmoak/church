@@ -27,7 +27,7 @@ const SectionM1: React.FC = () => {
 				{/* Background Image */}
 				<div className='absolute inset-0'>
 					<Image
-						src='/assets/come.jpg'
+						src='/assets/church57.jpeg'
 						alt='Church community gathering'
 						fill
 						className='object-cover opacity-10'
