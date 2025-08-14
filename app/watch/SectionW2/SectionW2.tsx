@@ -232,13 +232,6 @@ const WatchPage = () => {
 						>
 							Watch
 						</button>
-						{/* <button
-							onClick={() => handlePlay(featuredSermon.id, "audio")}
-							className='px-4 sm:px-6 py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
-						>
-							Listen
-						</button> */}
-
 						<a
 							href='https://open.spotify.com/show/6BHs8lkgFdLRTG30O1gMBw'
 							target='_blank'
@@ -272,13 +265,30 @@ const WatchPage = () => {
 								{paginatedSermons.map((sermon) => (
 									<div
 										key={sermon.id}
-										className='flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 sm:py-4 px-4 sm:px-6 bg-[#333333]/80 rounded-lg shadow-md border border-[#C25020]/20 hover:shadow-[#C25020]/40 hover:border-[#C25020]/50 transition-all duration-300 group'
+										className={`flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 sm:py-4 px-4 sm:px-6 rounded-lg shadow-md transition-all duration-300 group
+                      ${
+												selectedSermonId === sermon.id
+													? "bg-[#C25020]/20 border-2 border-[#C25020]/70 shadow-[#C25020]/40"
+													: "bg-[#333333]/80 border border-[#C25020]/20 hover:shadow-[#C25020]/40 hover:border-[#C25020]/50"
+											}`}
 									>
 										<div className='relative flex-1 mb-2 sm:mb-0'>
-											<h4 className='font-semibold text-base sm:text-lg text-white'>
+											<h4
+												className={`font-semibold text-base sm:text-lg ${
+													selectedSermonId === sermon.id
+														? "text-white"
+														: "text-white"
+												}`}
+											>
 												{sermon.title}
 											</h4>
-											<p className='text-xs sm:text-sm text-gray-300'>
+											<p
+												className={`text-xs sm:text-sm ${
+													selectedSermonId === sermon.id
+														? "text-gray-100"
+														: "text-gray-300"
+												}`}
+											>
 												{sermon.speaker} • {sermon.series} •{" "}
 												{new Date(sermon.date).toLocaleDateString("en-US", {
 													year: "numeric",
@@ -290,22 +300,25 @@ const WatchPage = () => {
 										<div className='flex gap-3 sm:gap-4'>
 											<button
 												onClick={() => handlePlay(sermon.id, "video")}
-												className='px-3 sm:px-4 py-1 sm:py-2 bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 shadow-md hover:shadow-[#C25020]/40 group'
+												className={`px-3 sm:px-4 py-1 sm:py-2 font-semibold rounded-lg transition-all duration-300 shadow-md group
+                          ${
+														selectedSermonId === sermon.id
+															? "bg-white text-[#C25020] hover:bg-gray-100"
+															: "bg-[#C25020] text-white hover:bg-[#A23E18] hover:shadow-[#C25020]/40"
+													}`}
 											>
 												Watch
 											</button>
-											{/* <button
-												onClick={() => handlePlay(sermon.id, "audio")}
-												className='px-3 sm:px-4 py-1 sm:py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
-											>
-												Listen
-											</button> */}
-
 											<a
 												href='https://open.spotify.com/show/6BHs8lkgFdLRTG30O1gMBw'
 												target='_blank'
 												rel='noopener noreferrer'
-												className='px-3 sm:px-4 py-1 sm:py-2 bg-transparent border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-200/10 transition-all duration-300 shadow-md group'
+												className={`px-3 sm:px-4 py-1 sm:py-2 font-semibold rounded-lg transition-all duration-300 shadow-md border-2
+                          ${
+														selectedSermonId === sermon.id
+															? "border-white text-white hover:bg-white/10"
+															: "border-gray-200 text-gray-200 hover:bg-gray-200/10"
+													}`}
 											>
 												Listen
 											</a>
