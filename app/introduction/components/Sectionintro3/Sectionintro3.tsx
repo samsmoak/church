@@ -38,7 +38,7 @@ const persons: Person[] = [
 		image: "/assets/church4.jpeg",
 		title: "Signs and Wonders",
 		description:
-			"We believe in regularly partaking of the Lord’s Table in obedience to Jesus’ command (Luke 22:19-20; 1 Corinthians 11:23-26). Communion reminds us of His sacrifice, unites us as His body, and renews our hope in His return.",
+			"We believe that signs and wonders follow those who believe in Jesus Christ (Mark 16:17-18; Acts 2:43). Through the supernatural manifestations of the Holy Spirit — healing, deliverance, miracles, prophecy, and other gifts (1 Corinthians 12:7-10) — the Good News is confirmed and made visible to the unbelieving world.",
 		icon: <BookOpen className='w-8 h-8 text-[#C25020]' />,
 	},
 	{

@@ -15,8 +15,8 @@ export default function Home() {
 		<div className='w-screen mt-24 '>
 			<div className='w-full bg-white'>
 				<div className='py-10 md:px-10 flex justify-center items-center'>
-					{/* <PurposeBanner /> */}
-					<Banner2 />
+					<PurposeBanner />
+					{/* <Banner2 /> */}
 				</div>
 
 				<ConferenceSection />
