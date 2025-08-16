@@ -8,7 +8,7 @@ import {
 	ChevronRight,
 	PlayCircle,
 	Download,
-} from "lucide-react"; // Assuming lucide-react icons are installed for better icons
+} from "lucide-react";
 
 const Section2: React.FC = () => {
 	const [isMounted, setIsMounted] = useState(false);
@@ -19,12 +19,6 @@ const Section2: React.FC = () => {
 
 	// Get first 3 sermons
 	const displayedSermons = sermons.slice(0, 3);
-
-	// Define an extended color palette
-	// Primary: #C25020 (orange)
-	// Secondary: #333333 (dark gray)
-	// Complementary: #F5F5F5 (light gray/beige for backgrounds), #FFFFFF (white), #6B7280 (mid gray for text), #1F2937 (darker for accents)
-	// Accent: #10B981 (emerald green for highlights, complementary to orange), #3B82F6 (blue for links/buttons if needed)
 
 	// Video content component
 	const VideoContent = ({ sermon }: { sermon: (typeof sermons)[0] }) => (
@@ -51,14 +45,15 @@ const Section2: React.FC = () => {
 					{sermon.description}
 				</p>
 				<div className='flex flex-wrap gap-4'>
-					<button className='bg-[#C25020] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#A23E18] transition duration-300 flex items-center gap-2'>
+					<a
+						href={sermon.videoUrl}
+						target='_blank'
+						rel='noopener noreferrer'
+						className='bg-[#C25020] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#A23E18] transition duration-300 flex items-center gap-2'
+					>
 						<ChevronRight className='w-5 h-5' />
 						Watch Full Sermon
-					</button>
-					{/* <button className='border border-[#C25020] text-[#C25020] px-6 py-3 rounded-lg font-medium hover:bg-[#F5F5F5] transition duration-300 flex items-center gap-2'>
-						<Download className='w-5 h-5' />
-						Download Audio
-					</button> */}
+					</a>
 				</div>
 			</div>
 		</div>
