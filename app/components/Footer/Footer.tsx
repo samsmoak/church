@@ -22,36 +22,16 @@ const Footer: React.FC = () => {
 						</h3>
 						<ul className='space-y-3'>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									What to Expect
-								</Link>
+								<span className='text-base'>What to Expect</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									The Weekender
-								</Link>
+								<span className='text-base'>The Weekender</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Upcoming Events
-								</Link>
+								<span className='text-base'>Upcoming Events</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Resources
-								</Link>
+								<span className='text-base'>Resources</span>
 							</li>
 						</ul>
 					</div>
@@ -61,60 +41,22 @@ const Footer: React.FC = () => {
 						</h3>
 						<ul className='space-y-3'>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Kids Ministry
-								</Link>
+								<span className='text-base'>Kids Ministry</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Student Ministry
-								</Link>
+								<span className='text-base'>Student Ministry</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									College Ministry
-								</Link>
+								<span className='text-base'>College Ministry</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Community Groups
-								</Link>
+								<span className='text-base'>Community Groups</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									DNA Groups
-								</Link>
+								<span className='text-base'>Mission Trips</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Mission Trips
-								</Link>
-							</li>
-							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Care & Support
-								</Link>
+								<span className='text-base'>Care & Support</span>
 							</li>
 						</ul>
 					</div>
@@ -124,44 +66,19 @@ const Footer: React.FC = () => {
 						</h3>
 						<ul className='space-y-3'>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Our Leadership
-								</Link>
+								<span className='text-base'>Our Leadership</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Vision & Values
-								</Link>
+								<span className='text-base'>Vision & Values</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Our Beliefs
-								</Link>
+								<span className='text-base'>Our Beliefs</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Residency Program
-								</Link>
+								<span className='text-base'>Residency Program</span>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Internship Opportunities
-								</Link>
+								<span className='text-base'>Internship Opportunities</span>
 							</li>
 						</ul>
 					</div>
@@ -172,32 +89,26 @@ const Footer: React.FC = () => {
 						<ul className='space-y-3'>
 							<li>
 								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+									href='https://www.youtube.com/@The522Church'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='text-base'
+									aria-label='YouTube'
 								>
-									Watch Sermons
+									watch sermons
 								</Link>
 							</li>
 							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
+								<Link href='give' className='text-base'>
 									Give Online
 								</Link>
 							</li>
 							<li>
 								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
-								>
-									Apple Podcasts
-								</Link>
-							</li>
-							<li>
-								<Link
-									href='#'
-									className='hover:text-[#C25020] transition-colors duration-300 text-base'
+									href='https://open.spotify.com/show/6BHs8lkgFdLRTG30O1gMBw'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='text-base'
 								>
 									Spotify
 								</Link>
@@ -225,8 +136,7 @@ const Footer: React.FC = () => {
 						</p>
 						<p className='text-gray-300 flex items-center gap-2'>
 							<Mail className='w-4 h-4' />
-
-							<p>contact:fruitspirit522@gmail.com</p>
+							contact:fruitspirit522@gmail.com
 						</p>
 						<div className='flex space-x-4 mt-4'>
 							<Link

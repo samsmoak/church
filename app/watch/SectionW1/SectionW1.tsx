@@ -50,7 +50,7 @@ const SectionW1: React.FC = () => {
 					</p>
 
 					{/* Buttons */}
-					<div className='flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center'>
+					<div className='hidden md:flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center'>
 						<Link
 							href='#ministries'
 							className='px-6 py-3 cursor-no-drop bg-[#C25020] text-white font-semibold rounded-lg hover:bg-[#A23E18] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-[#C25020]/40 group'
